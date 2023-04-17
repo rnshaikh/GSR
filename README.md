@@ -16,9 +16,9 @@
 
 # Run Program
 
-install all depependencies:
+    install all depependencies:
     pip install -r requirements.txt
 
-run main script:
+    run main script:
     python main.py start_date end_date dimensions
     ex. python main.py 2023-01-01 2023-01-02 app,platform,country
