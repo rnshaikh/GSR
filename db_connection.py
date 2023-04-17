@@ -10,7 +10,8 @@ mydb = mysql.connector.connect(
 
 def create_table():
     mycursor = mydb.cursor()
-    mycursor.execute("""CREATE TABLE IF NOT EXISTS ascend (app VARCHAR(50), platform VARCHAR(50), date DATE,
+    mycursor.execute("""CREATE TABLE IF NOT EXISTS ascend (id INT AUTO_INCREMENT PRIMARY KEY,
+                     app VARCHAR(50), platform VARCHAR(50), date DATE,
                      ad_cpm DOUBLE(16,4), install_rate DOUBLE(16, 4),
                      ad_revenue DOUBLE(16,2), spent DOUBLE(16,4),  fill_rate DOUBLE(16,4),
                      unfilled_impressions DOUBLE(16,4), impressions DOUBLE(16,4), clicks DOUBLE(16,4),
